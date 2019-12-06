@@ -13,7 +13,7 @@ const useDarkMode = () => {
         if (enableDark) {
             element.classList.add(className);
         } else {
-            element.classList.add(className);
+            element.classList.remove(className);
         }
     }, [enableDark] );
 
