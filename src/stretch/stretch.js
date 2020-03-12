@@ -42,14 +42,14 @@ class stretch extends React.Component{
   componentDidMount(){
     console.log('cDM is running')
     //axios to pull data from github
-    axios.get(`https://api.github.com/users/Rae-Glazier`)
+    axios.get(`https://api.github.com/users/raegdev`)
       .then(res => {
         console.log(res);
 
         this.setState({ userCard: res.data });
       });
 
-    axios.get(`https://api.github.com/users/Rae-Glazier/followers`)  
+    axios.get(`https://api.github.com/users/raegdev/followers`)  
       .then(res => {
         console.log(res);
         this.setState({ followerCard: res.data })
