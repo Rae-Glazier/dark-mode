@@ -96,7 +96,7 @@ class stretch extends React.Component{
         </Header>
         
         <Card>
-          <img width='300px' src={this.state.userCard.avatar_url} key={this.state.userCard.id} alt={this.state.userCard.login} />
+          <img style={{maxWidth:'200px', maxHeight:'200px', minWidth:'200px', minHeight:'200px'}} src={this.state.userCard.avatar_url} key={this.state.userCard.id} alt={this.state.userCard.login} />
           <h2>Name: {this.state.userCard.name}</h2>
           <h4>Username: {this.state.userCard.login} </h4>
           <h4>Location: {this.state.userCard.location}</h4>
@@ -108,7 +108,7 @@ class stretch extends React.Component{
           {this.state.followerCard.map ( (follower) => {
             return(
               <Follower>
-                <img width='200px' src={follower.avatar_url} key={follower.id} alt={follower.login}/>
+                <img style={{maxWidth:'200px', maxHeight:'200px', minWidth:'200px', minHeight:'200px'}} src={follower.avatar_url} key={follower.id} alt={follower.login}/>
                 <h2>Username: {follower.login}</h2>
               </Follower>
               )
